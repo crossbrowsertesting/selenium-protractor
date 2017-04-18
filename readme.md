@@ -106,7 +106,7 @@ Now executing Protractor on this configuration file will start up the same spec 
 
 ## Running Parallel Specs
 
-In addition to running specs to parallel browsers, we can run parallel specs. Only three lines need to change to our original configuration file to make this happen. You should see a third configuraton file called in this repository called 'conf_parallel_spec.js':
+Running specs in parallel with Protractor is even easier than running multiple browsers. Only three lines need to change to our original configuration file to make this happen. You should see a third configuraton file in this repository called 'conf_parallel_spec.js':
 
 ```
 exports.config = {
@@ -136,6 +136,6 @@ exports.config = {
 };
 ```
 
-Now, tests from your tests directory will be run in parallel against the same configuration on CBT's side. Increasing the maxInstances will allow you to run even more tests at the same time. Great for executing an entire suite of tests in minimum time!
+Now, specs from your 'tests' directory will be run in parallel against the same configuration on CBT's side. Increasing the maxInstances will allow you to run even more tests at the same time. Great for executing an entire suite of tests in minimum time!
 
 This was just a brief introduction to Protractor, but their API provides a full-scale integration for testing Angular applications. If you ever need any assistance in getting setup and running your scripts in our CBT environments, don't hestiate to [reach out to us](mailto:support@crossbrowsertesting.com). We're happy to help.
