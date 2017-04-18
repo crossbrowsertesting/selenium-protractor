@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Clone or download this repository. All the packages we need to get our scripts up and runnning are already in the node modules directory, so all we need to do to get our dependencies is run:
+Clone or download this repository. All the packages we need to get our scripts up and runnning are already in packages.json, so all we need to do to get our dependencies is run:
 
 ```
 npm install
