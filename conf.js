@@ -13,10 +13,9 @@ exports.config = {
     record_video: 'true',
     record_network: 'true',
     
-    // Device capabilities
-    browser_api_name : 'IE10', 
-    os_api_name : 'Win7x64-C2', 
-    browserName: 'internet explorer'    
+    // Device capabilities 
+    platform : 'Windows 7',           // Gets latest version by default
+    browserName: 'Internet Explorer'  // To specify version, add version: 'desired version'  
   },
   
   specs: './tests/*.js'
