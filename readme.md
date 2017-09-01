@@ -27,10 +27,9 @@ exports.config = {
     record_video: 'true',
     record_network: 'true'     
     
-    // Configuration-specific capabilities 
-    browser_api_name : 'IE10', 
-    os_api_name : 'Win7x64-C2', 
-    browserName: 'internet explorer',
+    // Configuration-specific capabilities
+    platform : 'Windows 7', 
+    browserName: 'Internet Explorer',
   },
   specs: './tests/*.js'
 };
@@ -87,14 +86,12 @@ exports.config = {
   // add more browsers to this array for more parllel tests!!
   multiCapabilities: [{
     'name': 'Protractor Parallel Example',
-    'browserName': 'chrome',
-    'browser_api_name': 'Chrome56x64',
-    'os_api_name': 'Win10'
+    'browserName': 'Chrome',
+    'platform': 'Windows 10'
   }, {
     'name': 'Protractor Parallel Example',
-    'browserName': 'firefox',
-    'browser_api_name': 'FF46x64',
-    'os_api_name': 'Win10'
+    'browserName': 'Firefox',
+    'platform': 'Windows 10'
   }],
 
   // the location of our specs
@@ -125,9 +122,8 @@ exports.config = {
      
     // Device capabilities
     name: 'Parallel Spec Example', 
-    browser_api_name : 'IE10', 
-    os_api_name : 'Win7x64-C2', 
-    browserName: 'internet explorer',
+    platform : 'Windows 7', 
+    browserName: 'Internet Explorer',
     record_video: 'true',
     record_network: 'true'
   },
