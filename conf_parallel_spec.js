@@ -16,9 +16,8 @@ exports.config = {
     record_network: 'true',
 
     // Device capabilities
-    browser_api_name : 'IE10', 
-    os_api_name : 'Win7x64-C2', 
-    browserName: 'internet explorer'
+    platform : 'Windows 7', 
+    browserName: 'Internet Explorer'
     
   },
   
