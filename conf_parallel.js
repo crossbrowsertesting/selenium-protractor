@@ -7,14 +7,12 @@ exports.config = {
   // add more browsers to this array for more parllel tests!!
   multiCapabilities: [{
     'name': 'Protractor Parallel Example',
-    'browserName': 'chrome',
-    'browser_api_name': 'Chrome56x64',
-    'os_api_name': 'Win10'
+    'browserName': 'Chrome',      // Gets latest version by default
+    'platform': 'Windows 10'      // To specify version, add 'version': 'desired version'
   }, {
     'name': 'Protractor Parallel Example',
-    'browserName': 'firefox',
-    'browser_api_name': 'FF46x64',
-    'os_api_name': 'Win10'
+    'browserName': 'Firefox',
+    'platform': 'Windows 10'
   }],
 
   //
