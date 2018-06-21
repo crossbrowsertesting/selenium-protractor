@@ -1,4 +1,4 @@
-# Getting Start with Protractor and CrossBrowserTesting
+# Getting Started with Protractor and CrossBrowserTesting
 
 [Protractor](http://www.protractortest.org/#/) is a powerful end-to-end framework for [Angular](https://angularjs.org/) and Angular JS applications. Powered by [Selenium](http://www.seleniumhq.org/docs/), built on top of Javascripts language bindings, and optimized for Angular applications means its quick and easy to write and execute tests for even the biggest web apps. Combined with CBT, we can test our Angular application in the cloud across a myriad of different OS/Browser combinations. 
 
