@@ -5,18 +5,18 @@ exports.config = {
 
   // add more browsers to this array for more parllel tests!!
   capabilities: {
- 
+
     // Cloud capabilities
-    name: 'Protractor ToDo Example', 
+    name: 'Protractor ToDo Example',
     user: "<yourusername>",
     password: "<yourauthkey>",
     record_video: 'true',
-    record_network: 'true',
-    
-    // Device capabilities 
+    record_network: 'false',
+
+    // Device capabilities
     platform : 'Windows 7',           // Gets latest version by default
-    browserName: 'Internet Explorer'  // To specify version, add version: 'desired version'  
+    browserName: 'Internet Explorer'  // To specify version, add version: 'desired version'
   },
-  
+
   specs: './tests/*.js'
 };
