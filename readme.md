@@ -1,6 +1,6 @@
 # Getting Started with Protractor and CrossBrowserTesting
 
-[Protractor](http://www.protractortest.org/#/) is a powerful end-to-end framework for [Angular](https://angularjs.org/) and Angular JS applications. Powered by [Selenium](http://www.seleniumhq.org/docs/), built on top of Javascripts language bindings, and optimized for Angular applications means its quick and easy to write and execute tests for even the biggest web apps. Combined with CBT, we can test our Angular application in the cloud across a myriad of different OS/Browser combinations. 
+[Protractor](http://www.protractortest.org/#/) is a powerful end-to-end framework for [Angular](https://angularjs.org/) and Angular JS applications. Powered by [Selenium](http://www.seleniumhq.org/docs/), built on top of Javascripts language bindings, and optimized for Angular applications means its quick and easy to write and execute tests for even the biggest web apps. Combined with CBT, we can test our Angular application in the cloud across a myriad of different OS/Browser combinations.
 
 ## Getting Started
 
@@ -25,10 +25,10 @@ exports.config = {
     password: "<yourauthkey>",
     name: 'Protractor ToDo Example',
     record_video: 'true',
-    record_network: 'true'     
-    
+    record_network: 'false'     
+
     // Configuration-specific capabilities
-    platform : 'Windows 7', 
+    platform : 'Windows 7',
     browserName: 'Internet Explorer',
   },
   specs: './tests/*.js'
@@ -45,7 +45,7 @@ describe('Protractor Demo App', function() {
   it('handle our ToDos', function() {
     browser.get('http://crossbrowsertesting.github.io/todo-app.html');
     expect(browser.getTitle()).toEqual('Todo App - CrossBrowserTesting.com');
-    
+
     var todo = element(By.name('todo-4'))
     todo.click();
 
@@ -55,7 +55,7 @@ describe('Protractor Demo App', function() {
     var textbox = element(By.id("todotext"));
 
     textbox.sendKeys("Get started with Protractor!");
-    
+
     var addButton = element(By.id("addbutton"));
     addButton.click();
 
@@ -99,7 +99,7 @@ exports.config = {
 };
 ```
 
-Now executing Protractor on this configuration file will start up the same spec against all the browsers in the 'multiCapabilities' array. Flipping over to our app, you should see tests for Chrome 56 and Firefox 46 on Windows 10 running at the same time. Keep adding to your multiCapabilities array to maximize the number of tests you can run in parallel. 
+Now executing Protractor on this configuration file will start up the same spec against all the browsers in the 'multiCapabilities' array. Flipping over to our app, you should see tests for Chrome 56 and Firefox 46 on Windows 10 running at the same time. Keep adding to your multiCapabilities array to maximize the number of tests you can run in parallel.
 
 ## Running Parallel Specs
 
@@ -115,19 +115,19 @@ exports.config = {
   capabilities: {
     shardTestFiles: true,     // allows specs to be executed in parallel.
     maxInstances: 2,          // total number of specs that can be run at once.
- 
+
     // Cloud capabilities
     user: "<yourusername>",
     password: "<yourauthkey>",
-     
+
     // Device capabilities
-    name: 'Parallel Spec Example', 
-    platform : 'Windows 7', 
+    name: 'Parallel Spec Example',
+    platform : 'Windows 7',
     browserName: 'Internet Explorer',
     record_video: 'true',
     record_network: 'true'
   },
-  
+
   specs: ['./tests/*.js']     // notice this is now an array
 };
 ```
