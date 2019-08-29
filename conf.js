@@ -1,3 +1,4 @@
+var setScore= require('./tests/setScore');
 exports.config = {
 
   // change this to your USERNAME and AUTHKEY
@@ -14,9 +15,13 @@ exports.config = {
     record_network: 'false',
 
     // Device capabilities
-    platform : 'Windows 7',           // Gets latest version by default
-    browserName: 'Internet Explorer'  // To specify version, add version: 'desired version'
+    platform : 'Windows 10',           // Gets latest version by default
+    browserName: 'Chrome'  // To specify version, add version: 'desired version'
   },
 
-  specs: './tests/*.js'
+  specs: './tests/*.js',
+  
+  onComplete: function() { 
+    browser.getSession().then(function(session){setScore(session.id_)})
+  }
 };
