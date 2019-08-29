@@ -20,7 +20,7 @@ module.exports = function setScore(sessionId) {
                 result.error = false;
                 result.message = 'success';
             }
-        }).auth("YOUR_USERNAME","YOUR_AUTHKEY");
+        }).auth("YOUR_USERNAME","YOUR_AUTHKEY"); //be sure to add you username and authkey
     } else {
         result.error = true;
         result.message = 'Session Id was not defined';
